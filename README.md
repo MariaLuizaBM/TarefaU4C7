@@ -5,3 +5,5 @@
     Na função principal, todas as bibliotecas são inicializadas e o PWM é inicializado para o GPIO 22. Para configurar a frequência para, aproximadamente, 50Hz, a função pwm_set_wrap é utilizada. Para definir ciclo ativo do módulo PWM para 2400µs, 1470µs e 500µs, considerando o Ciclo de Trabalho (Duty Cycle) de 0,12%,  0,0735% e 0,025%, respectivamente, foram utilizados dutyCycle_2400, dutyCycle_1470 e dutyCycle_500, respectivamente com o cálculo adequado para cada um, além de um intervalo de 5 segundos entre todas as movimentações.
 
     Por fim, no loop infinito foi feita uma rotina de movimentação do servo motor de 0 a 180 graus de maneira suave. O primeiro for incrementa o ciclo de trabalho de 500µs até 2400µs em passos de 5µs, com um atraso de 10ms entre cada passo, e o segundo for decrementa o ciclo de trabalho de 2400µs até 500µs com os mesmos passos e atraso.
+
+Vídeo de demonstração: https://drive.google.com/file/d/1JGZ88aIf_jRp94ZydouYLN8Tus6QQPZB/view?usp=sharing
